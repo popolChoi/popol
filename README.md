@@ -68,22 +68,32 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
 
 
+<!-- 
+설정 참고
 https://velog.io/@byjihye/react-github-pages
+https://www.hohyeonmoon.com/blog/react-js-github-pages-deploy/
 
+
+터미널
+npm run deploy
 git add .
 git status
 git commit -m "commit" 
-git push -u origin master
+git push -u origin master 
+git remote add origin https://github.com/popolChoi/popol.git
+
+
+-->
 
 
 create-react-app
 
 ### 페키지
-gh-pages
+gh-pages<br />
 
-react-router-dom
-cross-env
+react-router-dom<br />
+cross-env<br />
 
 ### ui
-semantic-ui-react
-react-icons
+semantic-ui-react<br />
+react-icons<br />
