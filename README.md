@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -65,4 +65,25 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `yarn build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
+
+
+https://velog.io/@byjihye/react-github-pages
+
+git add .
+git status
+git commit -m "commit" 
+git push -u origin master
+
+
+create-react-app
+
+### 페키지
+gh-pages
+
+react-router-dom
+cross-env
+
+### ui
+semantic-ui-react
+react-icons
