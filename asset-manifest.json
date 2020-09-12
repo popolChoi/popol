@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/popol/static/css/main.5f361e03.chunk.css",
+    "main.js": "/popol/static/js/main.34fcb58e.chunk.js",
+    "main.js.map": "/popol/static/js/main.34fcb58e.chunk.js.map",
+    "runtime-main.js": "/popol/static/js/runtime-main.973c8c63.js",
+    "runtime-main.js.map": "/popol/static/js/runtime-main.973c8c63.js.map",
+    "static/js/2.d8a9bb86.chunk.js": "/popol/static/js/2.d8a9bb86.chunk.js",
+    "static/js/2.d8a9bb86.chunk.js.map": "/popol/static/js/2.d8a9bb86.chunk.js.map",
+    "index.html": "/popol/index.html",
+    "precache-manifest.4c468f0b4999cc4f6b2ed859e32c4597.js": "/popol/precache-manifest.4c468f0b4999cc4f6b2ed859e32c4597.js",
+    "service-worker.js": "/popol/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/popol/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.d8a9bb86.chunk.js.LICENSE.txt": "/popol/static/js/2.d8a9bb86.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/popol/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.973c8c63.js",
+    "static/js/2.d8a9bb86.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.34fcb58e.chunk.js"
+  ]
+}
