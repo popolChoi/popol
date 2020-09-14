@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aa88626728409c08737eac1167c6a3a9",
+    "revision": "b79c4ebf058506a96823b5a27e156bfe",
     "url": "/popol/index.html"
   },
   {
-    "revision": "a55d89f0c77ce47922b2",
+    "revision": "09d773c635bc864ad2ce",
     "url": "/popol/static/css/2.a5960b1a.chunk.css"
   },
   {
-    "revision": "eb5700aac86534c4165a",
-    "url": "/popol/static/css/main.a0420638.chunk.css"
+    "revision": "036621b1730a7dfb0a43",
+    "url": "/popol/static/css/main.f72de4e4.chunk.css"
   },
   {
-    "revision": "a55d89f0c77ce47922b2",
-    "url": "/popol/static/js/2.321d0508.chunk.js"
+    "revision": "09d773c635bc864ad2ce",
+    "url": "/popol/static/js/2.2be71ae1.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/popol/static/js/2.321d0508.chunk.js.LICENSE.txt"
+    "revision": "5bd09eb7f2cf4d145d532d862be18942",
+    "url": "/popol/static/js/2.2be71ae1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eb5700aac86534c4165a",
-    "url": "/popol/static/js/main.76618f10.chunk.js"
+    "revision": "036621b1730a7dfb0a43",
+    "url": "/popol/static/js/main.f5a23452.chunk.js"
   },
   {
     "revision": "e639502d06c1302883f7",
