@@ -1,0 +1,33 @@
+.layout-bar {
+    overflow: hidden;
+
+    background: linear-gradient(to top, #313131, #ffffff);
+    background-blend-mode: multiply;
+    /* filter: grayscale(100%); */
+  
+    background-color: #9ab7f1;
+    float: left;
+    height: 100vh;
+    width: 300px;
+    transition: all ease 0.25s;
+    /* transition: width 0.25s linear; */
+  }
+  
+  .layout-bar-button {
+    background: transparent none!important;
+    transition: all ease 0.25s;
+  }
+  
+
+  .layout-main {
+    /* background-color: #282c34; */
+    float: right;
+    height: 100vh;
+    width: calc(100% - 300px);
+    transition: all ease 0.25s;
+  }
+
+  .lay-content{
+    min-height: 100vh; 
+  }
+  

@@ -78,9 +78,12 @@ https://www.hohyeonmoon.com/blog/react-js-github-pages-deploy/
 npm run deploy
 git add .
 git status
-git commit -m "commit" 
+git commit -m "commit"   
 git push -u origin master 
 git remote add origin https://github.com/popolChoi/popol.git
+
+git branch pd910900 //만듬
+git checkout pd910900  //이동
 
 
 -->
