@@ -8,6 +8,7 @@ import { Layout } from "./components/layout";
 const routes = [
   { path: "/", name: "Home", component: Home },
   { path: "/test1", name: "test1", component: () => "!!!!" },
+  { path: "/scroll",name: "scroll",},
 ];
 
 function Home() {

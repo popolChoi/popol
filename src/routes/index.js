@@ -3,8 +3,6 @@ import { BrowserRouter, Route, Switch, Link, Redirect } from "react-router-dom";
 import { IoMdPerson } from "react-icons/io";
 import logo from "./resource/img/logo.svg";
 
-
-
 class Routes extends PureComponent {
   render() {
     const { routes = [] } = this.props;
@@ -22,4 +20,3 @@ class Routes extends PureComponent {
   }
 }
 export default Routes;
-
