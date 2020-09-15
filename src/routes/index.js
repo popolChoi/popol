@@ -1,22 +1,33 @@
-import React, { PureComponent } from "react";
+import React from "react";
+
 import { BrowserRouter, Route, Switch, Link, Redirect } from "react-router-dom";
-import { IoMdPerson } from "react-icons/io";
-import logo from "./resource/img/logo.svg";
 
-class Routes extends PureComponent {
-  render() {
-    const { routes = [] } = this.props;
-    return (
-      <React.Fragment>
-        <Redirect from="/" to="/" />
-        {routes.map((r, i) => (
-          <Route exact={i === 0} path={r.path} component={r.component} />
-        ))}
+import { Layout } from "../components/layout";
+import Home from "./home";
+import Scroll from "./scroll";
 
-        {/* <Route exact path="/" component={Home}></Route>
-        <Route path="/test1" component={() => <IoMdPerson />}></Route> */}
-      </React.Fragment>
-    );
-  }
+const routes = [
+  { path: "/", name: "Home", component: () => <Home /> },
+  { path: "/test1", name: "test1", component: () => "!!!!" },
+  { path: "/scroll", name: "scroll", component: () => <Scroll /> },
+];
+
+function Routes() {
+  return (
+    <BrowserRouter>
+      <Layout
+        routes={routes}
+        cayoutContent={
+          <React.Fragment>
+            <Redirect from="/" to="/" />
+            {routes.map((r, i) => (
+              <Route exact={i === 0} path={r.path} component={r.component} />
+            ))}
+          </React.Fragment>
+        }
+      />
+    </BrowserRouter>
+  );
 }
+
 export default Routes;
