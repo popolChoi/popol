@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c34506467d8d7e340091b2176dac5753",
+    "revision": "229ba0061eae6084c2a186f5afc834e5",
     "url": "/popol/index.html"
   },
   {
-    "revision": "d1b463085ed20ca50061",
-    "url": "/popol/static/css/2.a5960b1a.chunk.css"
+    "revision": "ce9c6ef09e190868246b",
+    "url": "/popol/static/css/2.d6c91e9e.chunk.css"
   },
   {
-    "revision": "f60f625cceb808bc2e27",
-    "url": "/popol/static/css/main.6b78b39a.chunk.css"
+    "revision": "6f32151ed4505dfda4aa",
+    "url": "/popol/static/css/main.da18f436.chunk.css"
   },
   {
-    "revision": "d1b463085ed20ca50061",
-    "url": "/popol/static/js/2.a4cb9a46.chunk.js"
+    "revision": "ce9c6ef09e190868246b",
+    "url": "/popol/static/js/2.d9db54c2.chunk.js"
   },
   {
     "revision": "5bd09eb7f2cf4d145d532d862be18942",
-    "url": "/popol/static/js/2.a4cb9a46.chunk.js.LICENSE.txt"
+    "url": "/popol/static/js/2.d9db54c2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f60f625cceb808bc2e27",
-    "url": "/popol/static/js/main.27eb1210.chunk.js"
+    "revision": "6f32151ed4505dfda4aa",
+    "url": "/popol/static/js/main.6e4543cb.chunk.js"
   },
   {
     "revision": "e639502d06c1302883f7",
