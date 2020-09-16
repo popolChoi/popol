@@ -21,7 +21,12 @@ function Routes() {
           <React.Fragment>
             <Redirect from="/" to="/" />
             {routes.map((r, i) => (
-              <Route exact={i === 0} path={r.path} component={r.component} />
+              <Route
+                key={i}
+                exact={i === 0}
+                path={r.path}
+                component={r.component}
+              />
             ))}
           </React.Fragment>
         }

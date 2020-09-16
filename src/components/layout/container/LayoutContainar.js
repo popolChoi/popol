@@ -2,8 +2,9 @@ import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 
 import { CgChevronDoubleUp, CgChevronLeft } from "react-icons/cg";
-
 import { Input } from "semantic-ui-react";
+
+import { util } from "../../../common";
 
 class LayoutContainar extends Component {
   state = {
@@ -55,7 +56,7 @@ class LayoutContainar extends Component {
         <div className="lay-main-topBut">
           <button
             className="ui icon right button huge"
-            onClick={() => alert("!!!")}
+            onClick={() => util.scrollTo()}
           >
             <CgChevronDoubleUp />
           </button>
@@ -77,8 +78,9 @@ class LayoutContainar extends Component {
                   const routesList = [];
                   this.props.routes.map((n) => {
                     if (n.name.includes(v.value)) {
-                      routesList.push(n);
+                      return routesList.push(n);
                     }
+                    return null;
                   });
 
                   this.setState({ routesList });
@@ -87,7 +89,7 @@ class LayoutContainar extends Component {
             </div>
             <div className="layout-bar-list">
               {routesList.map((n, i) => (
-                <div>
+                <div key={i}>
                   <Link to={n.path}>{n.name}</Link>
                 </div>
               ))}
