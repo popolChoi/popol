@@ -1,60 +1,71 @@
 .layout-bar {
+  // background-color: #9ab7f1;
+
   /* background: linear-gradient(to top, #313131, #ffffff);
   background-blend-mode: multiply; */
   /* filter: grayscale(100%); */
-
-  /* background-color: #9ab7f1; */
-
   overflow: hidden;
   float: left;
   height: 100vmin;
   width: 300px;
   padding-top: 15px;
-
   transition: all ease 0.25s;
   /* transition: width 0.25s linear; */
+
+  &-search {
+    padding: 0px 15px 10px 30px;
+  }
+  &-list {
+    padding: 15px 15px 15px 30px;
+  }
+
+  &-list > div {
+    padding: 3px 0px 3px 0px;
+  }
+
+  &-button {
+    // background-color: #9ab7f1;
+
+    z-index: 3;
+    position: absolute;
+    transition: all ease 0.25s;
+
+    margin: 5px 5px 5px 0px;
+    left: 300px;
+    height: 50px;
+
+    & > button {
+      background: transparent none !important;
+      transition: all ease 0.25s;
+    }
+  }
 }
 
-.layout-bar-search {
-  padding: 0px 15px 10px 30px;
-}
-
-.layout-bar-list {
-  padding: 15px 15px 15px 30px;
-}
-
-.layout-bar-list > div {
-  padding: 3px 0px 3px 0px;
-}
-
-.layout-bar-button {
-  height: 50px;
-  /* position: relative; */
-  z-index: 2;
-  position: absolute;
-}
-
-.layout-bar-button > button {
-  background: transparent none !important;
-  transition: all ease 0.25s;
-}
-
-.layout-main .lay-content {
+.layout-main .lay-main-content {
   width: calc(100% - 300px);
 }
 
 .layout-main {
-  /* background-color: #282c34; */
   float: right;
   height: 100vh;
-  // overflow-y: scroll;
 
   /* transition: width 0.25s linear; */
 }
 
-.lay-content {
+.lay-main-content {
   z-index: 1;
-  height: 100%;
   position: absolute;
+
+  height: 100%;
   transition: width 0.25s linear;
+}
+
+.lay-main-topBut {
+  position: fixed;
+  z-index: 3;
+  right: 0px;
+  bottom: 0px;
+  margin: 35px;
+
+  background: transparent none !important;
 }

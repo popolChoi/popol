@@ -16,6 +16,7 @@ class Scroll extends Component {
     // console.log(this.set);
   }
   scrollTo(id, id2) {
+    const duration = 50;
     const node = document.getElementById(id);
     const node2 = document.getElementById(id2);
     const top = window.pageYOffset + node.getBoundingClientRect().top;
@@ -25,7 +26,7 @@ class Scroll extends Component {
     }
     this.timer = setInterval(() => {
       if (top > top2) {
-        this.set -= 10;
+        this.set -= duration;
         if (top2 * 1 >= this.set * 1) {
           window.scrollTo(0, top2);
           this.step();
@@ -33,7 +34,7 @@ class Scroll extends Component {
           window.scrollTo(0, this.set);
         }
       } else {
-        this.set += 25;
+        this.set += duration;
         if (top2 * 1 <= this.set * 1) {
           window.scrollTo(0, top2);
           this.step();
