@@ -67,8 +67,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
 
-
-<!-- 
+<!--
 설정 참고
 https://velog.io/@byjihye/react-github-pages
 https://www.hohyeonmoon.com/blog/react-js-github-pages-deploy/
@@ -78,8 +77,8 @@ https://www.hohyeonmoon.com/blog/react-js-github-pages-deploy/
 npm run deploy
 git add .
 git status
-git commit -m "commit"   
-git push -u origin master 
+git commit -m "commit"
+git push -u origin master
 git remote add origin https://github.com/popolChoi/popol.git
 
 git branch pd910900 //만듬
@@ -87,16 +86,22 @@ git checkout pd910900  //이동
 
 
 -->
-
+  <!--
+  웹팩 설정!!!!!!
+   https://medium.com/wasd/create-react-app-%EC%9D%98-webpack-config-js-%EB%93%A4%EC%97%AC%EB%8B%A4%EB%B3%B4%EA%B8%B0-78e40bf37313
+   
+     -->
 
 create-react-app
 
 ### 페키지
+
 gh-pages<br />
 
 react-router-dom<br />
 cross-env<br />
 
 ### ui
+
 semantic-ui-react<br />
 react-icons<br />

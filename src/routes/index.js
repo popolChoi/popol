@@ -4,14 +4,22 @@ import { BrowserRouter, Route, Switch, Link, Redirect } from "react-router-dom";
 
 import { Layout } from "../components/layout";
 import Home from "./home";
+
 import Scroll from "./scroll";
 
 const routes = [
   { path: "/", name: "Home", component: () => <Home /> },
-  { path: "/test1", name: "test1", component: () => "!!!!" },
   { path: "/scroll", name: "scroll", component: () => <Scroll /> },
-];
 
+  { path: "/css", name: "css" },
+  { path: "/React", name: "React" },
+
+  {
+    path: "/React package",
+    name: "React package",
+  },
+];
+//raw-loader
 function Routes() {
   return (
     <BrowserRouter>

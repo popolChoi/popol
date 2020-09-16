@@ -1,13 +1,16 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 
-import { CgChevronDoubleUp, CgChevronLeft } from "react-icons/cg";
-import { Input } from "semantic-ui-react";
+// import { CgChevronDoubleUp, CgChevronLeft } from "react-icons/cg";
+import { Input, Icon } from "semantic-ui-react";
 
 import { util } from "../../../common";
 
 class LayoutContainar extends Component {
   state = {
+    //style
+    topScrollBut: { opacity: 0 },
+
     layBarBut: {},
     layBarButIcon: {},
     layBar: { width: "300px" },
@@ -15,11 +18,32 @@ class LayoutContainar extends Component {
     routesList: [],
   };
 
+  // constructor(props) {
+  //   super(props);
+  // }
+
   componentDidMount() {
     this.setState({
       routesList: this.props.routes,
     });
+    window.addEventListener("scroll", this.scrollListener);
   }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.scrollListener);
+  }
+
+  scrollListener = () => {
+    if (window.pageYOffset > 100) {
+      if (!this.state.topScrollBut.opacity) {
+        return this.setState({ topScrollBut: { opacity: 1 } });
+      }
+    } else {
+      if (this.state.topScrollBut.opacity) {
+        return this.setState({ topScrollBut: { opacity: 0 } });
+      }
+    }
+  };
 
   onClick = () => {
     const { layBar } = this.state;
@@ -27,7 +51,6 @@ class LayoutContainar extends Component {
     if (layBar.width === "0%") {
       this.setState({
         layBarBut: {},
-
         layBarButIcon: {},
         layBar: { width: "300px" },
         layMain: { width: "calc(100% - 300px)" },
@@ -45,6 +68,8 @@ class LayoutContainar extends Component {
   render() {
     const { cayoutContent } = this.props;
     const {
+      topScrollBut,
+
       layMain,
       layBar,
       layBarBut,
@@ -53,13 +78,22 @@ class LayoutContainar extends Component {
     } = this.state;
     return (
       <Fragment>
-        <div className="lay-main-topBut">
-          <button
-            className="ui icon right button huge"
-            onClick={() => util.scrollTo()}
-          >
-            <CgChevronDoubleUp />
-          </button>
+        <div className="lay-topScrollBut" style={topScrollBut}>
+          {topScrollBut.opacity ? (
+            <button
+              className="ui icon right button huge"
+              onClick={() => util.scrollTo()}
+            >
+              <Icon
+                //loading
+                style={layBarButIcon}
+                name="angle double up"
+                // size="large"
+              />{" "}
+            </button>
+          ) : (
+            []
+          )}
         </div>
         <div
           style={{
@@ -95,16 +129,25 @@ class LayoutContainar extends Component {
               ))}
             </div>
           </div>
-          <div className="layout-bar-button" style={layBarBut}>
-            <button
-              className="ui icon right button huge"
-              onClick={this.onClick}
-            >
-              <CgChevronLeft style={layBarButIcon} />
-            </button>
+          <div
+            className="layout-bar-button"
+            style={layBarBut}
+            onClick={this.onClick}
+          >
+            {/* <i
+              style={layBarButIcon}
+              aria-hidden="true"
+              class="icon angle left big"
+            /> */}
+            <Icon
+              //loading
+              style={layBarButIcon}
+              name="angle left"
+              size="big"
+            />
+            {/* <CgChevronLeft style={layBarButIcon} /> */}
           </div>
         </div>
-
         <div className="layout-main" style={layMain}>
           <div className="lay-main-content" style={layMain}>
             {cayoutContent}

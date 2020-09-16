@@ -1,3 +1,23 @@
+.lay-topScrollBut {
+  transition: all ease 0.25s;
+  // font-size: 1em;
+  // opacity: 0.5;
+
+  position: fixed;
+  z-index: 3;
+  right: 0px;
+  bottom: 0px;
+  margin: 35px;
+  // opacity: 0;
+
+  background: transparent none !important;
+
+  // & :hover {
+  //   font-size: 1.4em;
+  //   opacity: 1;
+  // }
+}
+
 .layout-bar {
   // background-color: #9ab7f1;
 
@@ -10,6 +30,8 @@
   width: 300px;
   padding-top: 15px;
   transition: all ease 0.25s;
+
+  background: transparent none !important;
   /* transition: width 0.25s linear; */
 
   &-search {
@@ -25,47 +47,35 @@
 
   &-button {
     // background-color: #9ab7f1;
-
     z-index: 3;
     position: absolute;
     transition: all ease 0.25s;
+    opacity: 0.5;
 
-    margin: 5px 5px 5px 0px;
+    margin: 20px 5px 5px 15px;
     left: 300px;
     height: 50px;
+  }
 
-    & > button {
-      background: transparent none !important;
-      transition: all ease 0.25s;
-    }
+  &-button:hover {
+    font-size: 1.1em;
+    opacity: 1;
   }
 }
 
-.layout-main .lay-main-content {
-  width: calc(100% - 300px);
-}
+// .layout-main .lay-main-content {
+//   // width: calc(100% - 300px);
+// }
 
 .layout-main {
   float: right;
-  height: 100vh;
-
-  /* transition: width 0.25s linear; */
+  // height: 100vh;
 }
 
 .lay-main-content {
   z-index: 1;
   position: absolute;
-
-  height: 100%;
   transition: width 0.25s linear;
-}
 
-.lay-main-topBut {
-  position: fixed;
-  z-index: 3;
-  right: 0px;
-  bottom: 0px;
-  margin: 35px;
-
-  background: transparent none !important;
+  // height: 100%;
 }
