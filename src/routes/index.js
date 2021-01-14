@@ -1,10 +1,11 @@
 import React from "react";
+import axios from "axios";  // 설치 후 import
 
 import { BrowserRouter, Route, Switch, Link, Redirect } from "react-router-dom";
 
 import { Layout } from "../components/layout";
-import Home from "./home";
 
+import Home from "./home";
 import Scroll from "./scroll";
 
 const routes = [
@@ -19,8 +20,31 @@ const routes = [
     name: "React package",
   },
 ];
-//raw-loader
+
+
 function Routes() {
+  var request = require("request");
+  var url = "http://naver.com";
+  request(url, function(error, response, html){
+    console.log(html);
+  });
+
+//  axios({
+//   method: 'get',
+//   url: 'https://finance.naver.com/item/item_right_ajax.nhn?type=recent&code=005930&page=1',
+//   headers: { 'Content-Type': 'application/x-www-form-urlencoded',
+//   'Access-Control-Allow-Origin': '*',
+//   'Access-Control-Allow-Credentials': 'true' },
+
+//  })
+//  .then(response => {      // .then : 응답(상태코드200~300미만)성공시
+//     console.log(response);
+//  })
+//  .catch(error => {
+//     console.log(error);
+//  });
+
+
   return (
     <BrowserRouter>
       <Layout
@@ -44,3 +68,8 @@ function Routes() {
 }
 
 export default Routes;
+
+
+
+
+

@@ -1,6 +1,11 @@
 import React from "react";
 import Routes from "./routes";
 
+// const express = require('express');
+// const cors = require('cors');
+// const app = express();
+// app.use(cors());
+
 function App() {
   return (
     <React.StrictMode>
@@ -10,5 +15,7 @@ function App() {
     </React.StrictMode>
   );
 }
+
+
 
 export default App;
